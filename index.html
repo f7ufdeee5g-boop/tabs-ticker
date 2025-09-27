@@ -1,30 +1,37 @@
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
   <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-ENPH/" rel="noopener nofollow" target="_blank"><span class="blue-text">ENPH stock price</span></a><span class="trademark"> by TradingView</span></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
+  <div class="tradingview-widget-copyright"><a href="https://it.tradingview.com/markets/" rel="noopener nofollow" target="_blank"></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
   {
-  "symbol": "NASDAQ:ENPH",
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500 Index"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100 Cash CFD"
+    },
+    {
+      "proName": "FX_IDC:EURUSD",
+      "title": "EUR to USD"
+    },
+    {
+      "proName": "BITSTAMP:BTCUSD",
+      "title": "Bitcoin"
+    },
+    {
+      "proName": "OANDA:XAUUSD",
+      "title": "GOLD"
+    }
+  ],
   "colorTheme": "dark",
+  "locale": "it",
+  "largeChartUrl": "",
   "isTransparent": false,
-  "locale": "en",
-  "width": 250
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/XETR-NOV/" rel="noopener nofollow" target="_blank"><span class="blue-text">NOV stock price</span></a><span class="trademark"> by TradingView</span></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-  {
-  "symbol": "XETR:NOV",
-  "colorTheme": "dark",
-  "isTransparent": false,
-  "locale": "en",
-  "width": 250
+  "showSymbolLogo": true,
+  "displayMode": "adaptive"
 }
   </script>
 </div>
